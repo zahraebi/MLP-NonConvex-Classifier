@@ -45,6 +45,8 @@ Final Test Accuracy: 99.43%
 
 <img width="525" height="455" alt="image" src="https://github.com/user-attachments/assets/33c5625d-7c24-4b41-9f39-5989fd107e69" />
 
+> **Academic Integrity Note:** This repository serves as a portfolio to showcase methodology and analytical results. The original source code is maintained in a private repository to comply with academic integrity policies.
+
 
  ### Model summary :  
 <details>
@@ -74,4 +76,3 @@ _________________________________________________________________
 ---
 
 
-> **Academic Integrity Note:** This repository serves as a portfolio to showcase methodology and analytical results. The original source code is maintained in a private repository to comply with academic integrity policies.

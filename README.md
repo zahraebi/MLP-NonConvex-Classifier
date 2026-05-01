@@ -35,6 +35,14 @@ Through this comparative analysis, the following configuration was identified as
 ### Final Model Performance
 *Confusion Matrix for the optimal architecture [20, 15, 15] tested on the 15,000-sample dataset, achieving 99.42% accuracy.*
 
+Final Classification Report:
+
+              precision    recall  f1-score   support
+    Class C1       1.00      0.99      0.99      1500
+    Class C2       0.99      1.00      0.99      1500
+
+Final Test Accuracy: 99.43%
+
 <img width="525" height="455" alt="image" src="https://github.com/user-attachments/assets/33c5625d-7c24-4b41-9f39-5989fd107e69" />
 
 
@@ -64,4 +72,6 @@ _________________________________________________________________
 
 
 ---
+
+
 > **Academic Integrity Note:** This repository serves as a portfolio to showcase methodology and analytical results. The original source code is maintained in a private repository to comply with academic integrity policies.

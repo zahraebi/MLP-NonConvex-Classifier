@@ -29,16 +29,38 @@ Through this comparative analysis, the following configuration was identified as
 ### Decision Boundary & Error Analysis
 *The model successfully learned the non-convex interlocking pattern. Misclassifications are minimal and strictly located at the overlapping boundaries.*
 
-![Decision Boundary](./images/decision_boundary.png)
+<img width="790" height="1390" alt="image" src="https://github.com/user-attachments/assets/8fade2a6-5e23-4745-88cb-993d2eddb3e1" />
+
 
 ### Final Model Performance
 *Confusion Matrix for the optimal architecture [20, 15, 15] tested on the 15,000-sample dataset, achieving 99.42% accuracy.*
 
-![Confusion Matrix](./images/confusion_matrix.png)
+<img width="525" height="455" alt="image" src="https://github.com/user-attachments/assets/fc7b1853-9f83-4f89-b791-059d093f448e" />
 
-### Learning Curves (Training Stability)
-*Demonstrating stable convergence using SGD (η=0.01, α=0.9) on normalized data.*
 
-![Loss Curves](./images/loss_curve.png)
+### Final Model summary:
+<details>
+<summary><b>📂 Click to view Keras Model Summary</b></summary>
+
+```text
+Model: "sequential_22"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_84 (Dense)            (None, 20)                60        
+                                                                 
+ dense_85 (Dense)            (None, 15)                315       
+                                                                 
+ dense_86 (Dense)            (None, 15)                240       
+                                                                 
+ dense_87 (Dense)            (None, 1)                 16        
+                                                                 
+=================================================================
+Total params: 1,264 (4.94 KB)
+Trainable params: 631 (2.46 KB)
+Non-trainable params: 0 (0.00 B)
+Optimizer params: 633 (2.48 KB)
+_________________________________________________________________
+
 ---
 > **Academic Integrity Note:** This repository serves as a portfolio to showcase methodology and analytical results. The original source code is maintained in a private repository to comply with academic integrity policies.

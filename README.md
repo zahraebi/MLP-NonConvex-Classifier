@@ -25,9 +25,20 @@ Through this comparative analysis, the following configuration was identified as
 - **Scalability:** The model demonstrated excellent robustness, showing improved accuracy when scaling the dataset volume from 3,500 to 15,000 samples.
 
 ## 4. Visualizing Results
-*In this section, you can showcase the decision boundaries and loss curves.*
-- **Decision Boundary:** The MLP successfully captured the interlocking geometry.
-- **Error Analysis:** Misclassifications were strictly localized to the boundary overlap zone, proving high generalization and a lack of overfitting.
 
+### Decision Boundary & Error Analysis
+*The model successfully learned the non-convex interlocking pattern. Misclassifications are minimal and strictly located at the overlapping boundaries.*
+
+![Decision Boundary](./images/decision_boundary.png)
+
+### Final Model Performance
+*Confusion Matrix for the optimal architecture [20, 15, 15] tested on the 15,000-sample dataset, achieving 99.42% accuracy.*
+
+![Confusion Matrix](./images/confusion_matrix.png)
+
+### Learning Curves (Training Stability)
+*Demonstrating stable convergence using SGD (η=0.01, α=0.9) on normalized data.*
+
+![Loss Curves](./images/loss_curve.png)
 ---
 > **Academic Integrity Note:** This repository serves as a portfolio to showcase methodology and analytical results. The original source code is maintained in a private repository to comply with academic integrity policies.
